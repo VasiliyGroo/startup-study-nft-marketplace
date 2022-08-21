@@ -1,3 +1,12 @@
 :root {
     --bg-head-color: #141416;
+    --color-title-text: #FCFCFD;
+    --color-description-text: #777E91;
+    --bg-btn-color: #3772FF;
+    --label-color-green: #45B36B;
+    --label-color-cream: #E4D7CF;
+    --bg-box-content: #23262F;
+    --color-border-box-dark: #353945;
+    --color-border-box-light: #777E90;
+    --box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
 }
