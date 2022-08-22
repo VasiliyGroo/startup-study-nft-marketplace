@@ -64,7 +64,7 @@ header {
 
 .header__link:hover {
     color: var(--color-title-text);
-    transition: ease-in 0.2s;
+    transition: ease-in-out 0.2s;
 }
 
 .btn-step__nav-link {
@@ -95,12 +95,12 @@ header {
 
 .btn-border-line-gray:hover {
     border: 2px solid var(--color-title-text);
-    transition: ease-in 0.2s;
+    transition: ease-in-out 0.2s;
 }
 
 .btn-bg-blue:hover {
     background-color: #254ead;
-    transition: ease-in 0.2s;
+    transition: ease-in-out 0.2s;
 }
 
 .btn-step__nav {
@@ -134,10 +134,22 @@ ul {
     border: none;
 }
 
+.notification__icon:hover {
+    position: relative;
+    display: block;
+    background-image: url(../images/bell-hover.svg);
+    transition: ease-in-out 0.2s;
+    height: 19px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
 .notification__icon::before {
     position: absolute;
-    top: -12px;
-    right: -12px;
+    top: -11px;
+    right: -11px;
     width: 12px;
     height: 12px;
     border-radius: 25px;
@@ -258,7 +270,7 @@ h2 {
 
 .btn-border-line-gray-hero:hover {
     border: 2px solid var(--color-title-text);
-    transition: ease-in 0.2s;
+    transition: ease-in-out 0.2s;
 }
 
 /* END HERO SECTION */
@@ -317,12 +329,16 @@ h2 {
 
 .btn-long-line-gray:hover {
     border: 2px solid var(--color-title-text);
-    transition: ease-in 0.2s;
+    transition: ease-in-out 0.2s;
 }
 
 .btn-long-blue:hover {
     background-color: #254ead;
-    transition: ease-in 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.main__img {
+    position: relative;
 }
 
 .main__image {
@@ -334,6 +350,12 @@ h2 {
     border-radius: 16px;
     background-size: cover;
     background-position: 0px -90px;
+}
+
+.video-player__img {
+    position: relative;
+    top: 750px;
+    min-width: 624px;
 }
 
 .main__text {
@@ -369,17 +391,18 @@ p {
 .creator__icon {
     width: 40px;
     height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
-.creator__img {
+.creator__profile-img {
     display: block;
-    background-color: var(--label-color-cream);
-    min-width: 100%;
-    min-height: 100%;
-    background-repeat: no-repeat;
-    border-radius: 50px;
+    background-image: url(../images/creator-img.png);
+    width: 40px;
+    height: 40px;
     background-size: cover;
-    background-position: 0px -90px;
+    background-position: -79px -310px;
 }
 
 .creator__title {
@@ -494,6 +517,48 @@ p {
     line-height: 24px;
     text-align: center;
     color: var(--color-description-text);
+}
+
+.prev-next-btn {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    padding-left: 12px;
+    padding-top: 1px;
+}
+
+.prev-next-btn__left {
+    position: relative;
+    display: block;
+    background-image: url(../images/left-arrow.svg);
+    height: 10px;
+    width: 15px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+.prev-next-btn__right {
+    position: relative;
+    display: block;
+    background-image: url(../images/right-arrow-cyrcle.svg);
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
+.prev-next-btn__right:hover {
+    position: relative;
+    display: block;
+    background-image: url(../images/right-arrow-cyrcle-hover.svg);
+    transition: ease-in-out 0.2s;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
 }
 
 /* END Auction SECTION */
